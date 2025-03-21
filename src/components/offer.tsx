@@ -32,7 +32,7 @@ function Offer({
       <span>
         {`${discount * 100}% OFF if you order in the next`}
       </span>
-      <span>
+      <span className="font-extrabold">
         {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
       </span>
     </div>

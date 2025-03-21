@@ -5,9 +5,9 @@ import { CallToActionButton } from "./call-to-action";
 function Services() {
 	return (
 		<section className="flex flex-col items-center gap-6">
-			<div className="flex flex-col items-center gap-4 w-5/12">
+			<div className="flex flex-col items-center gap-4 md:w-5/12">
 				<div className="flex flex-col items-center gap-1">
-					<h1 className="inline-block gap-1.5 items-baseline text-center font-bold text-[2.8rem]/12">
+					<h1 className="inline-block gap-1.5 items-baseline text-center font-bold text-3xl md:text-[2.8rem]/12">
 						Get Peace of Mind With
 						<span className="text-primary"> My Doctors Note</span>
 					</h1>
@@ -19,13 +19,13 @@ function Services() {
 						className="w-fit"
 					/>
 				</div>
-				<span className="text-lg leading-6 text-gray-500">
+				<span className="font-light text-md md:text-lg leading-6 text-gray-500">
 					My Doctor&apos;s Note provides a fast, hassle-free solution for obtaining
 					excuse notes. Focus on your recovery while we take care of the
 					paperwork, delivering your note in minutes.
 				</span>
 			</div>
-			<div className="grid grid-cols-2 grid-rows-2 gap-4">
+			<div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
 				<Card>
 					<CardHeader label="Trusted by Thousands Across the USA" />
 					<CardContent>

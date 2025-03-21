@@ -7,13 +7,14 @@ function Footer() {
 		<>
 			<hr className="border-gray-200" />
 			<ContainerLayout>
-				<footer className="grid grid-cols-4 gap-2 px-4 text-gray-800">
+				<footer className="grid grid-cols-1 md:grid-cols-4 gap-2 px-4 text-gray-800">
 					<div className="flex flex-col gap-4">
 						<Image
 							src="/icons/brand-name.webp"
 							alt="logo"
 							width={200}
 							height={100}
+              className="w-[175px] md:w-[200px] h-auto"
 						/>
 						<div className="flex flex-row gap-2">
 							<span className="font-bold">Support</span>

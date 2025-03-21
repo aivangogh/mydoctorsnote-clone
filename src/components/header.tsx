@@ -10,7 +10,7 @@ export function Header({
 			<header
 				{...props}
 				className={cn(
-					"bg-white flex items-center justify-center py-[1.8rem]",
+					"bg-white flex items-center justify-center py-4 md:py-[1.8rem]",
 					className,
 				)}
 			>
@@ -19,6 +19,7 @@ export function Header({
 					alt="logo"
 					width={250}
 					height={100}
+          className="w-[200px] md:w-[250px] h-auto"
 				/>
 			</header>
 		</>

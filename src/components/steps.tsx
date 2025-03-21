@@ -5,16 +5,16 @@ import { CallToActionButton } from "./call-to-action";
 function Steps() {
 	return (
 		<section className="flex flex-col items-center gap-6">
-			<div className="flex flex-col gap-4 w-6/12">
-				<h1 className="text-center font-bold text-[2.8rem]/12">
+			<div className="flex flex-col gap-4 md:w-6/12">
+				<h1 className="text-center font-bold text-3xl md:text-[2.8rem]/12">
 					Get An Online Doctor&apos;s Note In 3 Easy Steps
 				</h1>
-				<span className="text-lg text-gray-500">
+				<span className="font-light text-md md:text-lg text-gray-500">
 					With our online platform we make it quick and simple for you to obtain
 					a doctors note, so you can focus on rest and recovery.
 				</span>
 			</div>
-			<div className="grid grid-cols-3 gap-4">
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 				<Card
 					imageProps={{
 						src: "/images/person1.webp",

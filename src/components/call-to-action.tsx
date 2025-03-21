@@ -15,7 +15,7 @@ function CallToActionButton({
 }: Props) {
   return (
     <div className="flex flex-col items-center gap-4">
-      <Button className="space-x-4 px-20 py-4">
+      <Button className="space-x-4 w-82 py-4">
         <span>{label}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +39,9 @@ function CallToActionButton({
           alt="Guard Logo"
           width={30}
           height={30}
+          className="w-[20px] md:w-[30px] h-auto"
         />
-        <span className={cn("text-white text-lg font-medium", descriptionProps?.className)}>100% Risk-Free Money Back Guarantee</span>
+        <span className={cn("text-white text-sm md:text-lg font-medium", descriptionProps?.className)}>100% Risk-Free Money Back Guarantee</span>
       </div>
     </div>
   );

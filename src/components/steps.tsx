@@ -7,7 +7,7 @@ function Steps() {
 		<section className="flex flex-col items-center gap-6">
 			<div className="flex flex-col gap-4 w-6/12">
 				<h1 className="text-center font-bold text-[2.8rem]/12">
-					Get An Online Doctor's Note In 3 Easy Steps
+					Get An Online Doctor&apos;s Note In 3 Easy Steps
 				</h1>
 				<span className="text-lg text-gray-500">
 					With our online platform we make it quick and simple for you to obtain
@@ -25,7 +25,7 @@ function Steps() {
 					headerProps={{ label: "Fill In The Smart Form" }}
 					descriptionProps={{
 						description:
-							"Indicate your illness and the desired duration. It's quick and intuitive.",
+							"Indicate your illness and the desired duration. It&apos;s quick and intuitive.",
 					}}
 				/>
 				<Card
@@ -38,7 +38,7 @@ function Steps() {
 					headerProps={{ label: "Receive Your PDF In 1 Minute" }}
 					descriptionProps={{
 						description:
-							"After you've completed the checkout, your pre-filled sick leave will be sent by email within 1 minute, and it will be ready on the payment confirmation page.",
+							"After you&apos;ve completed the checkout, your pre-filled sick leave will be sent by email within 1 minute, and it will be ready on the payment confirmation page.",
 					}}
 				/>
 				<Card

@@ -20,7 +20,7 @@ function Services() {
 					/>
 				</div>
 				<span className="text-lg leading-6 text-gray-500">
-					My Doctor’s Note provides a fast, hassle-free solution for obtaining
+					My Doctor&apos;s Note provides a fast, hassle-free solution for obtaining
 					excuse notes. Focus on your recovery while we take care of the
 					paperwork, delivering your note in minutes.
 				</span>
@@ -105,7 +105,7 @@ function Services() {
 					<div className="grid grid-cols-2 items-center gap-2">
 						<Image src="/avatars.png" alt="Avatars" width={250} height={100} />
 						<span className="text-green-400 text-2xl font-bold">
-							We're ready to help!
+							We&apos;re ready to help!
 						</span>
 					</div>
 				</Card>
@@ -185,17 +185,6 @@ function CardListItem({ title, description, className }: CardListItemProps) {
 				<h6 className="font-bold">• {title} -</h6>
 				<p>{description}</p>
 			</li>
-		</>
-	);
-}
-
-type CardFooterProps = {
-	className?: string;
-};
-function CardFooter({ className }: CardFooterProps) {
-	return (
-		<>
-			<div className={cn("text-gray-500", className)}></div>
 		</>
 	);
 }

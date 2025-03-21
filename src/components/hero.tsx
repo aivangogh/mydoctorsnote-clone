@@ -14,7 +14,7 @@ function Hero() {
 			<div className="absolute inset-0 flex flex-col items-center justify-center gap-6 py-10 bg-black/60">
 				<div className="flex flex-col items-center w-5/12">
 					<h1 className="text-white text-center font-extrabold text-[3.5rem]/16">
-						Your Doctor's Note In 1 Minute, for $29.99!
+						Your Doctor&apos;s Note In 1 Minute, for $29.99!
 					</h1>
 					<Image
 						src="/icons/underline-white.svg"

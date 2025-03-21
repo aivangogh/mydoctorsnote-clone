@@ -20,9 +20,9 @@ function Services() {
 					/>
 				</div>
 				<span className="font-light text-md md:text-lg leading-6 text-gray-500">
-					My Doctor&apos;s Note provides a fast, hassle-free solution for obtaining
-					excuse notes. Focus on your recovery while we take care of the
-					paperwork, delivering your note in minutes.
+					My Doctor&apos;s Note provides a fast, hassle-free solution for
+					obtaining excuse notes. Focus on your recovery while we take care of
+					the paperwork, delivering your note in minutes.
 				</span>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
@@ -50,18 +50,21 @@ function Services() {
 							alt="Walmart"
 							width={125}
 							height={100}
+							className="w-[80px] md:w-[125px] h-auto"
 						/>
 						<Image
 							src="/brands/fedex.webp"
 							alt="FedEx"
 							width={125}
 							height={100}
+							className="w-[80px] md:w-[125px] h-auto"
 						/>
 						<Image
 							src="/brands/starbucks.webp"
 							alt="Startbucks"
 							width={125}
 							height={100}
+							className="w-[80px] md:w-[125px] h-auto"
 						/>
 					</div>
 				</Card>
@@ -102,9 +105,9 @@ function Services() {
 							/>
 						</ul>
 					</CardContent>
-					<div className="grid grid-cols-2 items-center gap-2">
+					<div className="grid grid-cols-2 items-center gap-8 md:gap-2">
 						<Image src="/avatars.png" alt="Avatars" width={250} height={100} />
-						<span className="text-green-400 text-2xl font-bold">
+						<span className="text-green-400 text-sm md:text-xl font-bold">
 							We&apos;re ready to help!
 						</span>
 					</div>
@@ -115,16 +118,20 @@ function Services() {
 						className="text-center"
 					/>
 					<CardContent className="flex flex-col items-center justify-center gap-8">
-						<span className="text-gray-500 text-4xl font-bold line-through">$42.99</span>
-						<span className="text-black text-7xl font-extrabold">$29.99</span>
+						<span className="text-gray-500 text-xl md:text-3xl font-semibold line-through">
+							$42.99
+						</span>
+						<span className="text-black text-5xl md:text-6xl font-bold">
+							$29.99
+						</span>
 					</CardContent>
-					<span className="text-center text-green-400 text-3xl font-bold">
+					<span className="text-center text-green-400 text-lg md:text-2xl font-bold">
 						30% Discount - Limited Time!
 					</span>
 				</Card>
 			</div>
 			<CallToActionButton
-				label="Get your Doctrs Note Now"
+				label="Get your Doctors Note Now"
 				descriptionProps={{ className: "text-gray-500" }}
 			/>
 		</section>
@@ -156,7 +163,9 @@ type CardHeaderProps = {
 function CardHeader({ label, className }: CardHeaderProps) {
 	return (
 		<>
-			<h1 className={cn("font-bold text-2xl", className)}>{label}</h1>
+			<h1 className={cn("font-bold text-xl md:text-2xl", className)}>
+				{label}
+			</h1>
 		</>
 	);
 }
@@ -181,9 +190,11 @@ type CardListItemProps = {
 function CardListItem({ title, description, className }: CardListItemProps) {
 	return (
 		<>
-			<li className={cn("inline-block text-gray-500", className)}>
-				<h6 className="font-bold">• {title} -</h6>
-				<p>{description}</p>
+			<li className={cn(className)}>
+				<span className="inline-block text-gray-500 text-sm md:text-md">
+					<span className="font-bold">• {title} -</span>
+					<span>{description}</span>
+				</span>
 			</li>
 		</>
 	);

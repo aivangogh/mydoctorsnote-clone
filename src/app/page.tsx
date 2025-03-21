@@ -1,4 +1,3 @@
-import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { MoneyBackGuarantee } from "@/components/money-back-guarantee";
 import { Services } from "@/components/services";
@@ -14,7 +13,6 @@ export default function Home() {
 				<MoneyBackGuarantee />
 				<Services />
 			</ContainerLayout>
-			<Footer />
 		</div>
 	);
 }

@@ -10,7 +10,7 @@ function MoneyBackGuarantee() {
 				height={150}
 			/>
 			<div className="flex flex-col gap-4 md:w-6/12">
-				<h1 className="text-center md:text-left font-bold text-2xl md:text-4xl">
+				<h1 className="text-center md:text-left font-semibold text-2xl md:text-4xl">
 					Money Back Guarantee!
 				</h1>
 				<span className="text-center md:text-left text-md md:text-lg">

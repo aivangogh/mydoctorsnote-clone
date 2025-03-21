@@ -1,11 +1,17 @@
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Offer } from "@/components/offer";
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
+import { Assistant, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Instrument_Sans({
-	variable: "--font-istrument-sans",
+const instrumentSans = Instrument_Sans({
+	variable: "--font-instrument-sans",
+	subsets: ["latin"],
+});
+
+const assistantSans = Assistant({
+	variable: "--font-assistant",
 	subsets: ["latin"],
 });
 
@@ -21,12 +27,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} antialiased`}>
-				<div className="flex flex-col">
-					<Offer discount={0.3} className="sticky top-0 z-100" />
-					<Header className="sticky z-99" />
-				</div>
+			<body
+				className={`${instrumentSans.variable} ${assistantSans.variable} antialiased`}
+			>
+				<Offer discount={0.3} className="sticky top-0 z-100" />
+				<Header className="sticky z-99" />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

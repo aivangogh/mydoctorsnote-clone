@@ -7,8 +7,8 @@ function Footer() {
 		<>
 			<hr className="border-gray-200" />
 			<ContainerLayout>
-				<footer className="grid grid-cols-1 md:grid-cols-4 gap-2 px-4 text-gray-800">
-					<div className="flex flex-col gap-4">
+				<footer className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-2 px-4 text-gray-800">
+					<div className="flex flex-col gap-4 text-sm">
 						<Image
 							src="/icons/brand-name.webp"
 							alt="logo"
@@ -27,7 +27,7 @@ function Footer() {
 					</div>
 					<div className="flex flex-col gap-8">
 						<span className="font-medium">Customer service</span>
-						<div className="flex flex-col gap-4 text-sm font-light">
+						<div className="flex flex-col gap-4 text-xs text-gray-600">
 							<Link className="hover:underline" href="/pages/contact">Contract Us</Link>
 							<Link className="hover:underline" href="help@urgentsupport.co">Refund Requests</Link>
 							<Link className="hover:underline" href="/pages/frequently-asked-questions">
@@ -37,7 +37,7 @@ function Footer() {
 					</div>
 					<div className="flex flex-col gap-8">
 						<span className="font-medium">Policies</span>
-						<div className="flex flex-col gap-4 text-sm font-light">
+						<div className="flex flex-col gap-4 text-xs text-gray-600">
 							<Link className="hover:underline" href="/pages/terms-of-services">Terms Of Service</Link>
 							<Link className="hover:underline" href="/pages/refund-policy">Refund Policy</Link>
 							<Link className="hover:underline" href="/pages/privacy-policy">Privacy Policy</Link>
@@ -56,15 +56,15 @@ function Footer() {
 					</div>
 						<div className="flex flex-col gap-8">
 						<span className="font-medium">Company Details</span>
-						<span className="">COMPANY NAME & ADDRESS</span>
-						<span className="">Company registration number: 000000</span>
+						<span className="text-sm text-gray-600">COMPANY NAME & ADDRESS</span>
+						<span className="text-sm text-gray-600">Company registration number: 000000</span>
 					</div>
 				</footer>
 			</ContainerLayout>
 			<hr className="border-gray-200" />
 			<ContainerLayout>
 				<div className="flex items-center justify-center">
-					<span className="text-xs text-gray-500">© 2025, My Doctors Note</span>
+					<span className="text-[10px] text-gray-600">© 2025, My Doctors Note</span>
 				</div>
 			</ContainerLayout>
 		</>

@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Header({
 	className,
@@ -14,13 +15,15 @@ export function Header({
 					className,
 				)}
 			>
-				<Image
-					src="/icons/brand-name.webp"
-					alt="logo"
-					width={250}
-					height={100}
-          className="w-[200px] md:w-[250px] h-auto"
-				/>
+				<Link href="/">
+					<Image
+						src="/icons/brand-name.webp"
+						alt="logo"
+						width={250}
+						height={100}
+						className="w-[200px] md:w-[250px] h-auto"
+					/>
+				</Link>
 			</header>
 		</>
 	);

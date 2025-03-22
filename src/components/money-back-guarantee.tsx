@@ -14,8 +14,8 @@ function MoneyBackGuarantee() {
 					Money Back Guarantee!
 				</h1>
 				<span className="text-center md:text-left text-md md:text-lg">
-					We will refund 100% of your payment, in case you&apos;re not 100%
-					satisfied with our service.
+					{`We will refund 100% of your payment, in case you're not 100%
+					satisfied with our service.`}
 				</span>
 			</div>
 		</section>

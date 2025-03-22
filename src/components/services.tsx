@@ -5,9 +5,9 @@ import { CallToActionButton } from "./call-to-action";
 function Services() {
 	return (
 		<section className="flex flex-col items-center gap-6">
-			<div className="flex flex-col items-center gap-4 md:w-5/12">
+			<div className="flex flex-col items-center gap-4 md:w-6/12">
 				<div className="flex flex-col items-center gap-1">
-					<h1 className="inline-block gap-1.5 items-baseline text-center font-bold text-3xl md:text-[2.8rem]/12">
+					<h1 className="inline-block gap-1.5 items-baseline text-center font-semibold text-3xl md:text-[2.8rem]/12">
 						Get Peace of Mind With
 						<span className="text-primary"> My Doctors Note</span>
 					</h1>
@@ -19,17 +19,17 @@ function Services() {
 						className="w-fit"
 					/>
 				</div>
-				<span className="font-light text-md md:text-lg leading-6 text-gray-500">
-					My Doctor&apos;s Note provides a fast, hassle-free solution for
+				<span className="text-md md:text-lg leading-6 text-gray-500">
+          {`My Doctor's Note provides a fast, hassle-free solution for
 					obtaining excuse notes. Focus on your recovery while we take care of
-					the paperwork, delivering your note in minutes.
+					the paperwork, delivering your note in minutes.`}
 				</span>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
 				<Card>
 					<CardHeader label="Trusted by Thousands Across the USA" />
 					<CardContent>
-						<ul className="list-outside">
+						<ul className="flex flex-col gap-4 list-outside">
 							<CardListItem
 								title="Professional & Reliable"
 								description="Includes key medical absence details in a format widely recognized by workplaces."
@@ -71,7 +71,7 @@ function Services() {
 				<Card>
 					<CardHeader label="Get Your Note In Under 1 Minute" />
 					<CardContent>
-						<ul className="list-outside">
+						<ul className="flex flex-col gap-4 list-outside">
 							<CardListItem
 								title="Skip the Wait"
 								description="No appointments, no delays. Get what you need instantly, anytime."
@@ -90,7 +90,7 @@ function Services() {
 				<Card>
 					<CardHeader label="Customer Support That Puts You First" />
 					<CardContent>
-						<ul className="list-outside">
+						<ul className="flex flex-col gap-4 list-outside">
 							<CardListItem
 								title="Adjustable to Your Needs"
 								description="Easily modify details to match your situation."
@@ -108,7 +108,7 @@ function Services() {
 					<div className="grid grid-cols-2 items-center gap-8 md:gap-2">
 						<Image src="/avatars.png" alt="Avatars" width={250} height={100} />
 						<span className="text-green-400 text-sm md:text-xl font-bold">
-							We&apos;re ready to help!
+              {`We're ready to help!`}
 						</span>
 					</div>
 				</Card>

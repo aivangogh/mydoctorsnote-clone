@@ -11,7 +11,7 @@ export function Header({
 			<header
 				{...props}
 				className={cn(
-					"bg-white flex items-center justify-center py-4 md:py-[1.8rem]",
+					"bg-white border-b border-gray-200 flex items-center justify-center py-4 md:py-[1.8rem]",
 					className,
 				)}
 			>

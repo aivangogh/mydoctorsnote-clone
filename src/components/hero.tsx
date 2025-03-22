@@ -7,7 +7,7 @@ function Hero() {
 			<div className="flex flex-col items-center justify-center gap-6 py-16 md:py-32 bg-black/60">
 				<div className="flex flex-col items-center w-10/12 md:w-5/12">
 					<h1 className="text-white text-center font-extrabold text-2xl md:text-5xl/16">
-						Your Doctor&apos;s Note In <span className="truncate">1 Minute</span>, for $29.99!
+            {`Your Doctor's Note In <span className="truncate">1 Minute</span>, for $29.99!`}
 					</h1>
 					<Image
 						src="/icons/underline-white.svg"

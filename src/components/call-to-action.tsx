@@ -15,7 +15,7 @@ function CallToActionButton({
 }: Props) {
   return (
     <div className="flex flex-col items-center gap-4">
-      <Button className="space-x-4 w-82 py-4">
+      <Button className="space-x-4 w-[22rem] py-5">
         <span>{label}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

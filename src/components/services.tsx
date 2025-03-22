@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { CallToActionButton } from "./call-to-action";
+import { Card, CardContent, CardHeader } from "./ui/card";
 
 function Services() {
 	return (
@@ -46,14 +47,14 @@ function Services() {
 					</CardContent>
 					<div className="flex flex-row items-center justify-between">
 						<Image
-							src="/brands/walmart.webp"
+							src="/brands/walmart.svg"
 							alt="Walmart"
 							width={125}
 							height={100}
 							className="w-[80px] md:w-[125px] h-auto"
 						/>
 						<Image
-							src="/brands/fedex.webp"
+							src="/brands/fedex.svg"
 							alt="FedEx"
 							width={125}
 							height={100}
@@ -135,50 +136,6 @@ function Services() {
 				descriptionProps={{ className: "text-gray-500" }}
 			/>
 		</section>
-	);
-}
-
-type CardProps = {
-	className?: string;
-	children: React.ReactNode;
-};
-
-function Card({ className, children }: CardProps) {
-	return (
-		<div
-			className={cn(
-				"flex flex-col gap-4 bg-blue-100 px-4 pt-4 pb-6 rounded-lg",
-				className,
-			)}
-		>
-			<div className="flex flex-col gap-4">{children}</div>
-		</div>
-	);
-}
-
-type CardHeaderProps = {
-	label: string;
-	className?: string;
-};
-function CardHeader({ label, className }: CardHeaderProps) {
-	return (
-		<>
-			<h1 className={cn("font-bold text-xl md:text-2xl", className)}>
-				{label}
-			</h1>
-		</>
-	);
-}
-
-type CardContentProps = {
-	children: React.ReactNode;
-	className?: string;
-};
-function CardContent({ children, className }: CardContentProps) {
-	return (
-		<>
-			<div className={cn("text-gray-500", className)}>{children}</div>
-		</>
 	);
 }
 

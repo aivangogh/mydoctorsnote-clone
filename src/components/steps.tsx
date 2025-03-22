@@ -1,20 +1,21 @@
 import { cn } from "@/lib/utils";
 import Image, { ImageProps } from "next/image";
 import { CallToActionButton } from "./call-to-action";
+import { FadeInSection } from "./animations/fade-in-section";
 
 function Steps() {
 	return (
 		<section className="flex flex-col items-center gap-6">
-			<div className="flex flex-col gap-4 md:w-7/12">
-				<h1 className="font-sans text-center font-medium text-3xl md:text-[2.8rem]/12">
+			<FadeInSection className="flex flex-col gap-4 md:w-7/12">
+				<h1 className="font-sans text-center font-medium text-4xl md:text-[2.8rem]/12">
           {`Get An Online Doctor's Note In 3 Easy Steps`}
 				</h1>
 				<span className="text-md md:text-lg text-gray-500">
 					With our online platform we make it quick and simple for you to obtain
 					a doctors note, so you can focus on rest and recovery.
 				</span>
-			</div>
-			<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+			</FadeInSection>
+			<FadeInSection delay={0.1} className="grid grid-cols-1 md:grid-cols-3 gap-4">
 				<Card
 					imageProps={{
 						src: "/images/person1.webp",
@@ -54,7 +55,7 @@ function Steps() {
 							"Join hundreds of thousands of satisfied customers who trust us. Our sick leave plans are easy to use and designed to meet your needs quickly and efficiently!",
 					}}
 				/>
-			</div>
+			</FadeInSection>
       <CallToActionButton label="Get your Note Now" descriptionProps={{ className: "text-gray-500"}}/>
 		</section>
 	);

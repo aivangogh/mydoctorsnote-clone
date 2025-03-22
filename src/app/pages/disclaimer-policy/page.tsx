@@ -1,7 +1,7 @@
 export default function DisclaimerPolicy() {
 	return (
 		<div className="flex flex-col gap-10">
-			<h1 className="text-5xl">Disclaimer Policy</h1>
+			<h1 className="text-3xl md:text-5xl leading-10">Disclaimer Policy</h1>
 
 			<div className="flex flex-col gap-6 text-gray-600 text-sm">
 				<div className="flex flex-col gap-4">

@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { useInView } from "@/hooks/useInView";
 
 type Props = {
   label: string;
@@ -13,9 +16,11 @@ function CallToActionButton({
   label,
   descriptionProps
 }: Props) {
+	const [ref, isInView] = useInView<HTMLButtonElement>({ threshold: 0.2 });
+
   return (
     <div className="flex flex-col items-center gap-4">
-      <Button className="space-x-4 w-[22rem] py-5">
+      <Button ref={ref} className={cn("space-x-4 w-[22rem] py-5 transition-all duration-700", isInView ? "opacity-100" : "opacity-0")}>
         <span>{label}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

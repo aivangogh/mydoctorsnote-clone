@@ -1,7 +1,7 @@
 export default function Contact() {
 	return (
 		<div className="flex flex-col gap-10">
-			<h1 className="text-5xlt">Contract Us</h1>
+			<h1 className="text-3xl md:text-5xl leading-10">Contract Us</h1>
 
 			<div className="flex flex-col gap-6 text-gray-600 text-sm">
 				<p>

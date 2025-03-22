@@ -34,7 +34,7 @@ function Footer() {
 							<Link className="hover:underline" href="/pages/contact">
 								Contract Us
 							</Link>
-							<Link className="hover:underline" href="help@urgentsupport.co">
+							<Link className="hover:underline" href="mailto:help@urgentsupport.co">
 								Refund Requests
 							</Link>
 							<Link

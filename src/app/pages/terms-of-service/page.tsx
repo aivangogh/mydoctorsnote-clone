@@ -4,9 +4,9 @@ export default function TermsOfService() {
 			<h1 className="text-3xl md:text-5xl leading-10">Terms Of Service</h1>
 
 			<div className="flex flex-col gap-6 text-gray-600 text-sm">
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-6">
 					<span className="font-bold">Last Updated: February 4, 2025</span>
-					<span className="font-regular leading-7">
+					<span className="font-regular leading-8">
 						<span className="font-bold">IMPORTANT NOTICE:</span> BY ACCESSING,
 						UTILIZING, OR NAVIGATING ANY FACET OF THIS DIGITAL PLATFORM, YOU
 						IRREVOCABLY ASSENT TO BE LEGALLY ENCUMBERED BY THE FOLLOWING TERMS,
@@ -20,7 +20,7 @@ export default function TermsOfService() {
 					<span className="font-bold text-black text-[16px]">
 						1. INTRODUCTION
 					</span>
-					<span className="font-regular leading-7">
+					<span className="font-regular leading-8">
 						<span className="font-bold">COMPANY NAME,</span>
 						{`, a duly
 						incorporated entity within the jurisdiction of Hong Kong

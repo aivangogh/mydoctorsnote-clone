@@ -21,7 +21,7 @@ export function Header({
 						alt="logo"
 						width={250}
 						height={100}
-						className="w-[200px] md:w-[250px] h-auto"
+						className="w-[150px] md:w-[250px] h-auto"
 					/>
 				</Link>
 			</header>

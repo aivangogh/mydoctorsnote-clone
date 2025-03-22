@@ -6,11 +6,11 @@ import { FadeInSection } from "./animations/fade-in-section";
 function Steps() {
 	return (
 		<section className="flex flex-col items-center gap-6">
-			<FadeInSection className="flex flex-col gap-4 md:w-7/12">
-				<h1 className="font-sans text-center font-medium text-4xl md:text-[2.8rem]/12">
+			<FadeInSection className="flex flex-col items-center gap-4 w-full">
+				<h1 className="md:w-6/12 font-heading text-center font-semibold text-4xl md:text-[3rem]/12">
           {`Get An Online Doctor's Note In 3 Easy Steps`}
 				</h1>
-				<span className="text-md md:text-lg text-gray-500">
+				<span className="md:w-7/12 text-md md:text-lg text-gray-500">
 					With our online platform we make it quick and simple for you to obtain
 					a doctors note, so you can focus on rest and recovery.
 				</span>
@@ -49,7 +49,7 @@ function Steps() {
 						width: 225,
 						height: 225,
 					}}
-					headerProps={{ label: "100% Satisfaction Guarantee", className: "font-extrabold" }}
+					headerProps={{ label: "100% Satisfaction Guarantee", className: "font-extrabold font-none" }}
 					descriptionProps={{
 						description:
 							"Join hundreds of thousands of satisfied customers who trust us. Our sick leave plans are easy to use and designed to meet your needs quickly and efficiently!",
@@ -92,7 +92,7 @@ function Card({
 			</div>
 			<div className="flex flex-col gap-4">
 				<div className="text-center">
-					<h1 className={cn("font-bold text-2xl", headerProps.className)}>
+					<h1 className={cn("font-heading font-semibold text-2xl", headerProps.className)}>
 						{headerProps.label}
 					</h1>
 				</div>

@@ -28,11 +28,11 @@ function Offer({
   const seconds = timeLeft % 60;
 
   return (
-    <div className={cn("flex items-center justify-center gap-1 text-white bg-primary py-3 md:py-1.5", className)}>
-      <span className="font-semibold text-xs md:text-sm">
+    <div className={cn("font-heading flex items-center justify-center gap-1 text-white bg-primary py-2 md:py-1", className)}>
+      <span className="font-semibold text-sm md:text-base">
         {`${discount * 100}% OFF if you order in the next`}
       </span>
-      <span className="font-extrabold text-sm md:text-md">
+      <span className="font-bold text-base md:text-lg">
         {minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}
       </span>
     </div>

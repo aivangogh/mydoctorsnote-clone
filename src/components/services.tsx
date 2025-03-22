@@ -8,7 +8,7 @@ function Services() {
 		<section className="flex flex-col items-center gap-6">
 			<div className="flex flex-col items-center gap-4 md:w-6/12">
 				<div className="flex flex-col items-center gap-1">
-					<h1 className="inline-block gap-1.5 items-baseline text-center font-semibold text-3xl md:text-[2.8rem]/12">
+					<h1 className="font-heading inline-block gap-1.5 items-baseline text-center font-semibold text-3xl md:text-[2.8rem]/12">
 						Get Peace of Mind With
 						<span className="text-primary"> My Doctors Note</span>
 					</h1>
@@ -17,7 +17,7 @@ function Services() {
 						alt="Underline"
 						width={10}
 						height={10}
-						className="w-fit"
+						className="w-[10rem] md:w-fit"
 					/>
 				</div>
 				<span className="text-md md:text-lg leading-6 text-gray-500">
@@ -108,7 +108,7 @@ function Services() {
 					</CardContent>
 					<div className="grid grid-cols-2 items-center gap-8 md:gap-2">
 						<Image src="/avatars.png" alt="Avatars" width={250} height={100} />
-						<span className="text-green-400 text-sm md:text-xl font-bold">
+						<span className="font-heading text-green-400 text-sm md:text-xl font-bold">
               {`We're ready to help!`}
 						</span>
 					</div>
@@ -119,14 +119,14 @@ function Services() {
 						className="text-center"
 					/>
 					<CardContent className="flex flex-col items-center justify-center gap-8">
-						<span className="text-gray-500 text-xl md:text-3xl font-semibold line-through">
+						<span className="font-heading text-gray-500 text-xl md:text-3xl font-semibold line-through">
 							$42.99
 						</span>
-						<span className="text-black text-5xl md:text-6xl font-bold">
+						<span className="font-heading text-black text-5xl md:text-6xl font-semibold">
 							$29.99
 						</span>
 					</CardContent>
-					<span className="text-center text-green-400 text-lg md:text-2xl font-bold">
+					<span className="font-heading text-center text-green-400 text-lg md:text-3xl font-bold">
 						30% Discount - Limited Time!
 					</span>
 				</Card>

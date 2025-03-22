@@ -11,7 +11,7 @@
   --color-primary: #2323FD;
 ;
   --font-sans: var(--font-assistant);
-  --font-serif: var(--font-instrument-sans);
+  --font-heading: var(--font-instrument-sans);
   --font-mono: var(--font-geist-mono);
 }
 

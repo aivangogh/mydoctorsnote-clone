@@ -4,7 +4,7 @@ import { Accordion, AccordionItem } from "@/components/ui/accordion";
 export default function Contact() {
 	return (
 		<div className="w-full flex flex-col items-center gap-10">
-			<h1 className="text-4xl md:text-5xl leading-10">FAQ</h1>
+			<h1 className="font-heading font-semibold text-4xl md:text-5xl leading-10">FAQ</h1>
 			<div className="md:w-[45rem]">
 				<Accordion>
 					<AccordionItem

@@ -25,7 +25,7 @@ type CardHeaderProps = {
 function CardHeader({ label, className }: CardHeaderProps) {
 	return (
 		<>
-			<h1 className={cn("font-bold text-xl md:text-2xl", className)}>
+			<h1 className={cn("font-heading font-semibold text-xl md:text-2xl", className)}>
 				{label}
 			</h1>
 		</>

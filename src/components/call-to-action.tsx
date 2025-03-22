@@ -19,8 +19,8 @@ function CallToActionButton({
 	const [ref, isInView] = useInView<HTMLButtonElement>({ threshold: 0.2 });
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <Button ref={ref} className={cn("space-x-4 w-[22rem] py-5 transition-all duration-700", isInView ? "opacity-100" : "opacity-0")}>
+    <div className="flex flex-col items-center gap-3 md:gap-4">
+      <Button ref={ref} className={cn("text-base md:text-lg font-heading space-x-4 w-[22rem] py-4 md:py-5 transition-all duration-700", isInView ? "opacity-100" : "opacity-0")}>
         <span>{label}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ function CallToActionButton({
           height={30}
           className="w-[20px] md:w-[30px] h-auto"
         />
-        <span className={cn("text-white text-sm md:text-lg font-medium", descriptionProps?.className)}>100% Risk-Free Money Back Guarantee</span>
+        <span className={cn("text-white text-xs md:text-[1rem] font-medium", descriptionProps?.className)}>100% Risk-Free Money Back Guarantee</span>
       </div>
     </div>
   );

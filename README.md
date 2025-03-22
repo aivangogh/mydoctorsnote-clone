@@ -1,4 +1,2 @@
-Time Spend: More than 6 hours 
+Time Spend: More than 12 hours 
 
-
-PS: Can't work because of power outage :v

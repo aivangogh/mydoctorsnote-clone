@@ -38,7 +38,7 @@ function Footer() {
 					<div className="flex flex-col gap-8">
 						<span className="font-medium">Policies</span>
 						<div className="flex flex-col gap-4 text-xs text-gray-600">
-							<Link className="hover:underline" href="/pages/terms-of-services">Terms Of Service</Link>
+							<Link className="hover:underline" href="/pages/terms-of-service">Terms Of Service</Link>
 							<Link className="hover:underline" href="/pages/refund-policy">Refund Policy</Link>
 							<Link className="hover:underline" href="/pages/privacy-policy">Privacy Policy</Link>
 							<Link className="hover:underline" href="/pages/disclaimer-policy">Disclaimer Policy</Link>

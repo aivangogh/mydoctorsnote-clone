@@ -1,7 +1,7 @@
-export default function Contact() {
+export default function TermsOfService() {
 	return (
 		<div className="flex flex-col gap-10">
-			<h1 className="text-5xl">Terms Of Services</h1>
+			<h1 className="text-5xl">Terms Of Service</h1>
 
 			<div className="flex flex-col gap-6 text-gray-600 text-sm">
 				<div className="flex flex-col gap-4">

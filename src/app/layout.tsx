@@ -1,6 +1,5 @@
 import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-import { Offer } from "@/components/offer";
+import { MainHeader } from "@/components/main-header";
 import type { Metadata } from "next";
 import { Assistant, Instrument_Sans } from "next/font/google";
 import "./globals.css";
@@ -30,8 +29,7 @@ export default function RootLayout({
 			<body
 				className={`${instrumentSans.variable} ${assistantSans.variable} antialiased`}
 			>
-				<Offer discount={0.3} className="sticky top-0 z-100" />
-				<Header className="sticky z-99" />
+				<MainHeader />
 				{children}
 				<Footer />
 			</body>
